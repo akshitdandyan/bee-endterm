@@ -1,0 +1,19 @@
+/* all child of .textLayer have position absolute */
+
+:root {
+    --scale-factor: 0.8;
+}
+.textLayer {
+    position: absolute;
+    top: -5px;
+    left: 0;
+}
+.textLayer > * {
+    position: absolute;
+    color: skyblue;
+    font-size: calc(1.5rem * var(--scale-factor));
+}
+/* selection color */
+.textLayer > *::selection {
+    background-color: rgba(6, 71, 155, 0.3);
+}

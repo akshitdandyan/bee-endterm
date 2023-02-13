@@ -1,0 +1,63 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+    -webkit-tap-highlight-color: transparent !important;
+}
+
+body {
+    background: linear-gradient(90deg, #666666 0%, white, white, 100%);
+}
+
+/* #app {
+    max-width: 1200px;
+    margin: 0px auto;
+    background: white;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+} */
+
+abbr {
+    text-decoration: none;
+}
+.custom-sc::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+}
+
+.custom-sc::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+.custom-sc::-webkit-scrollbar-thumb {
+    background: #888;
+}
+
+.custom-sc::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+.hide-sc::-webkit-scrollbar {
+    display: none;
+}
+
+pre {
+    font-family: inherit;
+}
+
+@media all and (display-mode: standalone) {
+    #pwa-install {
+        display: none !important;
+    }
+}
+
+pre a {
+    color: rgb(19, 56, 149);
+    background: rgb(200, 225, 255);
+    padding: 0 2px;
+    border-radius: 2px;
+}
+
+pre a:hover {
+    background: rgb(150, 200, 255);
+}
